@@ -1,7 +1,7 @@
 #include "MyCanvas.h"
 
 MyCanvas::MyCanvas(wxWindow* parent)
-    : wxPanel(parent),
+    : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxWANTS_CHARS),
       m_x(300), m_y(150),
       m_dx(3), m_dy(2)
 {
